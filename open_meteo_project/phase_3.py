@@ -1,5 +1,4 @@
 # Author: <Jesubukade Emmanuel Ajakaye>
-# Student ID: <E4216209>
 
 # Import neccessary libraries and packages
 import os
