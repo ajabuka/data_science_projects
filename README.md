@@ -10,5 +10,7 @@ This repository contains various projects I have completed to show my data scien
 
 ## Projects
 ### 1. Open Meteo
-This projects works with a sql database. demonstrated skills in manipulating database, visualization using matplotlib as well as creating a simple app for user interaction.
+This projects works with a python and sql database. Demonstrated skills in manipulating database, visualization using matplotlib as well as creating a simple app for user interaction.
 
+### 2. US Election Outcome VS Campaign Build-Up
+This projects was developed in R. Demonstrated skills visualization using R libraries as well as creating a model to make predictions and evaluating the model performance.
