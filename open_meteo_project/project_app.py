@@ -3,11 +3,12 @@
 # Import need libraries
 import os
 
-import uvicorn
 from typing import Optional
+from datetime import date, datetime
+import uvicorn
 from fastapi import FastAPI, Query
 from pydantic import BaseModel, Field
-from datetime import date, datetime
+
 
 import phase_1 as ph1
 import phase_3 as ph3

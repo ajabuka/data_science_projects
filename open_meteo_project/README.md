@@ -58,7 +58,7 @@ This module uses a get request from open meteo historical data api and updates t
 #### further_enhancement
 This module is just to add extra feature to the other modules. 4 functions are developed here and most mentioned in other modules descriptions.
 
-#### projec_app: Intructions for FastApi
+#### project_app: Intructions for FastApi
 The fourth section under further_enhancement is a **Simple Web Micro-Service** using [**FastApi**](https://fastapi.tiangolo.com/). This is an interactive web service that can be used to query the database (get request) and has also be designed to update the local database from the open meteo database.
 
 ***Step 1***
