@@ -22,4 +22,10 @@ This project was developed in python. Demonstrated skills in understanding trend
 This project was developed in PowerBI. Showcased my skills in Business Intelligence and creating dashboards to show key insights and assist in making informed Decisions.
 
 ### 5. Accident Severity (Traffic Delay)
-This project evaluates traffic delay when and accidents happens. I trained and optimized 4 models to determine which works better on the datasets and improve my skills on model development and prediction.
+This project evaluated traffic delay when and accidents happens. I trained and optimized 4 models to determine which works better on the datasets and improve my skills on model development and prediction.
+
+### 6. Evaluating Bias in ML Development
+This project evaluated a Machine Learning Model. 3 Fairness Criteria was applied to check for Bias applying the 80-20 percent rule.
+
+### 7. Interactive Visualization
+This is a team project to develop charts that are interactive and provide insights to users. Developed on Javascript, HTML, CSS using d3.js.
