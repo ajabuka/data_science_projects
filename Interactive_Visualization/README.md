@@ -1,10 +1,10 @@
 # Creating Interactive Charts in JavaScript Using d3 library.
 
-![Contributors](https://img.shields.io/github/contributors/ajabuka/data_science_projects/tree/main/Interactive_Visualization?style=plastic)
+<!-- ![Contributors](https://img.shields.io/github/contributors/ajabuka/data_science_projects/tree/main/Interactive_Visualization?style=plastic)
 ![Forks](https://img.shields.io/github/forks/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
 ![Stars](https://img.shields.io/github/stars/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
 ![Licence](https://img.shields.io/github/license/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
-![Issues](https://img.shields.io/github/issues/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
+![Issues](https://img.shields.io/github/issues/ajabuka/data_science_projects/tree/main/Interactive_Visualization) -->
 
 ## This project was designed by in Team.
 
