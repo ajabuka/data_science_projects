@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D3 Bar Race Styled</title>
+  
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+
+  <!-- Add Style -->
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <!-- Tab links -->
+  <div class="topnav">
+    <a href="../index.html">Home</a>
+    <a href="../AJAKAYE_E4216209">Map</a>
+    <a href="../ADU-KUMI_E4257024">Line Chart</a>
+    <a class="active" href="../AMONIEOFORI_E4073237">Racing Bar Chart</a>
+    <a href="../JANNIGORLA_S3482833">Box Plot</a>
+    <a href="../DANTEINAPALLI_S3468006">Pie Chart</a>
+  </div>
+
+  <h2 id="chart_title">Top Transaction Types Over Time</h2>
+
+  <div class="container-fluid">
+    <div class="barChart"></div>
+    <div>
+      <button id="playBtn">Play</button>
+      <button id="pauseBtn">Pause</button>
+      <button id="resetBtn">Reset</button>
+      <label>Speed: <input id="speedSlider" type="range" min="800" max="5000" step="200" value="2000"></label>
+    </div>
+  </div>
+
+  <script src="bar_script.js"></script>
+</body>
+</html>

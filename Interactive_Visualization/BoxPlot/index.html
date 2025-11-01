@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transaction Amount Boxplot by Fraud Status</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <!-- Tab links -->
+    <div class="topnav">
+        <a href="../index.html">Home</a>
+        <a href="../AJAKAYE_E4216209">Map</a>
+        <a href="../ADU-KUMI_E4257024">Line Chart</a>
+        <a href="../AMONIEOFORI_E4073237">Racing Bar Chart</a>
+        <a class="active" href="../JANNIGORLA_S3482833">Box Plot</a>
+        <a href="../DANTEINAPALLI_S3468006">Pie Chart</a>
+    </div>
+
+    <h2 id="chart_title"></h2>
+
+    <div class="container-fluid">
+        
+        <div class="controls">
+            <label for="device-select">Device Type:</label>
+            <select id="device-select">
+                <option value="All">All Devices</option>
+                <option value="Mobile">Mobile</option>
+                <option value="Desktop">Desktop</option>
+            </select>
+        </div>
+
+        <div class="boxplot"></div>
+    </div>
+    
+    <script src="boxplot.js"></script>
+</body>
+</html>

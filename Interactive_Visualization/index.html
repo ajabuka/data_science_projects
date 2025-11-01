@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ICA Team Fraud</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+        <!-- Tab links -->
+        <div class="topnav">
+            <a class="active" href="/index.html">Home</a>
+            <a href="Map">Map</a>
+            <a href="LineChart">Line Chart</a>
+            <a href="BarChart">Racing Bar Chart</a>
+            <a href="BoxPlot">Box Plot</a>
+            <a href="PieChart">Pie Chart</a>
+        </div>
+
+        <h1>Unveiling Nigeria's Transaction Landscape</h1>
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="map.png" style="width:100%; height: 400px;">
+            <div class="text">Distribution Map</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="linechart.png" style="width:100%; height: 400px;">
+            <div class="text">Timeseries Distribution</div>
+            </div>
+        
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="barchart.png" style="width:100%; height: 400px;">
+            <div class="text">Racing Bar Chart</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="boxplot.png" style="width:100%; height: 400px;">
+            <div class="text">Data Spread using Box Plot</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="piechart.png" style="width:100%; height: 400px;">
+            <div class="text">Summary using Pie Chart</div>
+            </div>
+        </div>
+
+        <script src="slideshow.js">
+
+        </script>
+
+        <section class="box">
+            <h2>Our Motivation</h2>
+            <p>As <span class="highlight">data analysts working with transaction monitoring systems</span>, 
+                we wanted to understand the behavioral patterns and potential fraud activities across Nigerian 
+                states within a key business time frame: <span class="highlight">10 AM to 11 PM</span>.</p>
+            <p>To do this, we analyzed a dataset containing <span class="highlight">all financial transactions 
+                across all Nigerian states within that hour</span>, revealing not just volumes and values, 
+                but also hidden fraud patterns.</p>
+            <h2>Our Team</h2>
+            <ul>
+                <li><span class="highlight">AJAKAYE, JESUBUKADE - E4216209</span> (Project Lead, Scrum Master)</li>
+                <li><span class="highlight">ADU-KUMI, NANA YAW - E4257024</span> (Development Team)</li>
+                <li><span class="highlight">AMONIEOFORI, ABINYE - E4073237</span> (Development Team)</li>
+                <li><span class="highlight">DANTEINAPALLI, SATYA ANIL KUMAR - S3468006</span> (Development Team)</li>
+                <li><span class="highlight">JANNIGORLA, HEMANTH - S3482833</span> (Development Team)</li>
+                <li><span class="highlight">FOLORUNSO, AYORINDE</span> (Project Owner)</li>
+            </ul>
+        </section>
+    
+        <section class="box">
+            <h2>Data Visualization Journey</h2>
+    
+            <h3>1. Exploring State-by-State Trends</h3>
+            <p>We began by mapping out the transaction activity geographically using a <span class="highlight">choropleth 
+                map of Nigeria</span>. This map offered three key layers:</p>
+            <ul>
+                <li>Total Transactions per State</li>
+                <li>Total Fraudulent Transactions per State</li>
+                <li>Percentage of Fraudulent to Total Transactions</li>
+            </ul>
+            <p>This revealed fraud hotspots and raised questions about risk concentration.</p>
+    
+            <h3>2. Zooming Into Time-Based Patterns</h3>
+            <p>A <span class="highlight">time series line chart</span> showed transaction values over the hour, split into:</p>
+            <ul>
+                <li>Fraudulent</li>
+                <li>Non-Fraudulent</li>
+            </ul>
+            <p>It revealed subtle fraud spikes shortly after peak legitimate activities.</p>
+    
+            <h3>3. Following the Money by Transaction Type</h3>
+            <p>Using a <span class="highlight">racing bar chart</span>, we visualized:</p>
+            <ul>
+                <li>Cheque Deposit</li>
+                <li>Deposit</li>
+                <li>Withdrawal</li>
+                <li>Transfer</li>
+                <li>ATM Withdrawal</li>
+                <li>Online Transfer</li>
+                <li>Bill Payment</li>
+                <li>POS Withdrawal</li>
+            </ul>
+            <p>This chart showcased dynamic trends and shifting dominance over time.</p>
+    
+            <h3>4. Understanding Device Influence</h3>
+            <p>A <span class="highlight">box plot</span> compared transaction amounts by device:</p>
+            <ul>
+                <li>Mobile</li>
+                <li>Desktop</li>
+            </ul>
+            <p>Revealing which devices were linked to higher value or riskier transactions.</p>
+    
+            <h3>5. Drilling Down with Interactivity</h3>
+            <p>To wrap it up, a <span class="highlight">multi-layered interactive pie chart</span> provided:</p>
+            <ul>
+                <li>Layer 1: Fraud vs. Non-Fraud</li>
+                <li>Layer 2: Transaction Status</li>
+                <li>Layer 3: Device Used</li>
+                <li>Layer 2: Transaction Types</li>
+            </ul>
+            <p>This allowed users to explore the dataset in a meaningful, drill-down experience.</p>
+        </section>
+    
+        <section class="box">
+            <h2>Outcome</h2>
+            <p>This narrative and visualization flow offered both <span class="highlight">a bird’s-eye view</span> and <span class="highlight">deep analytical insights</span> into how, where, and when fraud occurs. Stakeholders could quickly identify patterns, compare behaviors across states, and recognize the tools most often used in high-risk transactions.</p>
+        </section>            
+        
+    </body>
+</html>

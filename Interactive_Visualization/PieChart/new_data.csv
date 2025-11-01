@@ -1,0 +1,1001 @@
+TransactionAmount,TransactionType,TransactionStatus,FraudFlag,DeviceUsed
+495.9,Deposit,Failed,TRUE,Desktop
+529.62,Withdrawal,Success,FALSE,Mobile
+862.47,Withdrawal,Failed,FALSE,Mobile
+1129.88,Transfer,Success,TRUE,Mobile
+933.24,Deposit,Success,TRUE,Mobile
+449.56,Withdrawal,Failed,FALSE,Desktop
+72.97,Withdrawal,Success,TRUE,Mobile
+1135.8,Deposit,Failed,TRUE,Mobile
+1154.59,Withdrawal,Success,FALSE,Mobile
+683.48,Transfer,Success,TRUE,Mobile
+485.37,Transfer,Failed,TRUE,Mobile
+1356.77,Deposit,Failed,FALSE,Desktop
+385.43,Deposit,Success,FALSE,Desktop
+394.76,Deposit,Failed,FALSE,Desktop
+620.34,Deposit,Failed,FALSE,Desktop
+579.65,Transfer,Failed,FALSE,Mobile
+1171.23,Transfer,Success,FALSE,Mobile
+817.55,Deposit,Failed,FALSE,Mobile
+113.95,Deposit,Success,FALSE,Mobile
+906.82,Transfer,Failed,FALSE,Mobile
+402.18,Withdrawal,Failed,FALSE,Mobile
+154.78,Transfer,Success,TRUE,Mobile
+762.55,Deposit,Success,FALSE,Desktop
+1196.23,Withdrawal,Failed,FALSE,Mobile
+1414.14,Transfer,Failed,FALSE,Mobile
+276.76,Withdrawal,Failed,TRUE,Mobile
+1453.39,Withdrawal,Failed,FALSE,Mobile
+826.75,Withdrawal,Failed,TRUE,Desktop
+1371.8,Transfer,Failed,TRUE,Mobile
+604.25,Transfer,Failed,TRUE,Mobile
+979.89,Withdrawal,Failed,FALSE,Mobile
+129.78,Transfer,Success,TRUE,Desktop
+884.55,Transfer,Failed,TRUE,Mobile
+250.27,Transfer,Failed,FALSE,Mobile
+1227.89,Transfer,Success,FALSE,Desktop
+743.4,Transfer,Failed,FALSE,Desktop
+852.42,Withdrawal,Failed,FALSE,Mobile
+92.6,Withdrawal,Success,FALSE,Desktop
+499.18,Withdrawal,Success,TRUE,Mobile
+910.24,Withdrawal,Success,FALSE,Mobile
+992.8,Withdrawal,Failed,TRUE,Desktop
+793.95,Deposit,Success,FALSE,Mobile
+1483.75,Transfer,Success,FALSE,Desktop
+944.51,Withdrawal,Failed,TRUE,Desktop
+1093.14,Withdrawal,Failed,FALSE,Desktop
+326.66,Withdrawal,Success,TRUE,Mobile
+819.69,Transfer,Failed,FALSE,Mobile
+436.83,Withdrawal,Failed,FALSE,Mobile
+480.29,Withdrawal,Failed,TRUE,Mobile
+681.23,Deposit,Success,FALSE,Desktop
+434.31,Withdrawal,Failed,TRUE,Mobile
+196.41,Deposit,Failed,FALSE,Desktop
+144.1,Transfer,Failed,FALSE,Desktop
+313.72,Deposit,Failed,TRUE,Desktop
+209.97,Withdrawal,Success,FALSE,Mobile
+879.63,Withdrawal,Success,TRUE,Desktop
+906.98,Withdrawal,Failed,TRUE,Mobile
+1017.3,Deposit,Failed,TRUE,Mobile
+972.39,Withdrawal,Success,TRUE,Desktop
+1436.77,Withdrawal,Failed,FALSE,Mobile
+1094.34,Transfer,Failed,FALSE,Mobile
+1235.27,Deposit,Success,FALSE,Mobile
+737.12,Deposit,Success,FALSE,Desktop
+524.38,Deposit,Success,TRUE,Mobile
+940.3,Deposit,Success,TRUE,Mobile
+339.18,Deposit,Failed,FALSE,Desktop
+713.85,Withdrawal,Success,TRUE,Desktop
+1069.09,Withdrawal,Failed,TRUE,Mobile
+311.12,Withdrawal,Success,FALSE,Desktop
+1393.36,Transfer,Success,FALSE,Desktop
+412.43,Transfer,Success,FALSE,Mobile
+1246.4,Transfer,Success,FALSE,Desktop
+713.43,Withdrawal,Failed,TRUE,Desktop
+497.06,Deposit,Failed,TRUE,Desktop
+480.26,Deposit,Failed,TRUE,Mobile
+1446.89,Withdrawal,Failed,TRUE,Mobile
+72.36,Withdrawal,Failed,FALSE,Mobile
+1177.64,Transfer,Success,FALSE,Desktop
+1495.01,Transfer,Success,TRUE,Mobile
+235.44,Withdrawal,Failed,TRUE,Mobile
+572.09,Transfer,Failed,FALSE,Mobile
+513.84,Withdrawal,Success,TRUE,Mobile
+899.08,Deposit,Failed,FALSE,Desktop
+765.31,Deposit,Success,TRUE,Desktop
+677.07,Transfer,Failed,FALSE,Desktop
+1468.89,Transfer,Success,FALSE,Mobile
+1344.01,Withdrawal,Failed,FALSE,Mobile
+571.22,Transfer,Success,FALSE,Desktop
+1480.16,Deposit,Success,FALSE,Mobile
+980.64,Deposit,Failed,FALSE,Desktop
+989.51,Withdrawal,Success,TRUE,Mobile
+724.95,Withdrawal,Success,FALSE,Mobile
+437.44,Transfer,Failed,TRUE,Mobile
+1149.48,Transfer,Success,FALSE,Mobile
+1279.44,Transfer,Success,FALSE,Mobile
+1240.14,Withdrawal,Failed,TRUE,Mobile
+1303.52,Withdrawal,Failed,TRUE,Mobile
+526.37,Withdrawal,Failed,FALSE,Mobile
+1269.91,Withdrawal,Failed,FALSE,Desktop
+616.37,Transfer,Failed,TRUE,Desktop
+196.79,Transfer,Success,FALSE,Mobile
+252.77,Withdrawal,Failed,TRUE,Desktop
+762.47,Withdrawal,Failed,FALSE,Mobile
+1349.84,Withdrawal,Success,TRUE,Mobile
+140,Transfer,Failed,TRUE,Desktop
+1406.15,Transfer,Failed,FALSE,Desktop
+929.9,Transfer,Success,FALSE,Mobile
+315.13,Withdrawal,Failed,FALSE,Mobile
+275.22,Deposit,Success,FALSE,Mobile
+1054.67,Transfer,Success,FALSE,Desktop
+1258.41,Transfer,Success,FALSE,Mobile
+217.56,Transfer,Success,TRUE,Mobile
+1174.55,Transfer,Failed,FALSE,Mobile
+1042.62,Transfer,Failed,TRUE,Desktop
+51.89,Deposit,Failed,FALSE,Mobile
+757.11,Withdrawal,Failed,TRUE,Desktop
+802.33,Transfer,Success,TRUE,Desktop
+556.32,Transfer,Failed,TRUE,Mobile
+256.48,Withdrawal,Failed,TRUE,Desktop
+538.85,Deposit,Success,FALSE,Desktop
+703.98,Withdrawal,Success,TRUE,Desktop
+573.31,Deposit,Success,TRUE,Desktop
+1317.9,Deposit,Failed,FALSE,Mobile
+717.18,Deposit,Success,FALSE,Mobile
+585.21,Withdrawal,Success,TRUE,Mobile
+370.03,Withdrawal,Success,FALSE,Desktop
+1091.12,Deposit,Success,TRUE,Mobile
+1181.48,Transfer,Failed,TRUE,Mobile
+614.35,Deposit,Failed,FALSE,Mobile
+459.03,Deposit,Success,TRUE,Mobile
+570.25,Withdrawal,Failed,FALSE,Mobile
+1080.96,Withdrawal,Success,TRUE,Desktop
+206.11,Withdrawal,Success,FALSE,Desktop
+906.4,Transfer,Failed,FALSE,Desktop
+1234.97,Deposit,Success,FALSE,Desktop
+864.07,Transfer,Success,FALSE,Desktop
+1168.41,Withdrawal,Failed,FALSE,Mobile
+1063.01,Transfer,Success,FALSE,Mobile
+578.36,Withdrawal,Failed,TRUE,Mobile
+389.42,Withdrawal,Failed,TRUE,Mobile
+559.62,Deposit,Failed,TRUE,Mobile
+176.97,Deposit,Success,TRUE,Mobile
+537.6,Transfer,Success,TRUE,Mobile
+561.3,Withdrawal,Failed,TRUE,Desktop
+1135.83,Transfer,Failed,TRUE,Mobile
+499.93,Transfer,Success,TRUE,Desktop
+889.23,Withdrawal,Success,TRUE,Desktop
+638.84,Withdrawal,Success,FALSE,Desktop
+1456.87,Deposit,Failed,TRUE,Mobile
+561.06,Deposit,Failed,TRUE,Desktop
+1465.1,Transfer,Failed,FALSE,Desktop
+753.03,Transfer,Success,TRUE,Mobile
+1421.77,Deposit,Failed,FALSE,Mobile
+1293.2,Transfer,Failed,TRUE,Desktop
+1080.33,Transfer,Success,FALSE,Desktop
+976.88,Withdrawal,Success,FALSE,Desktop
+1250.33,Deposit,Success,TRUE,Mobile
+560.21,Deposit,Failed,TRUE,Mobile
+604.58,Withdrawal,Failed,FALSE,Mobile
+724.63,Deposit,Success,FALSE,Desktop
+486.01,Transfer,Success,TRUE,Mobile
+883.68,Transfer,Failed,TRUE,Mobile
+750.92,Transfer,Success,TRUE,Desktop
+1065.66,Deposit,Success,TRUE,Desktop
+475.88,Withdrawal,Failed,FALSE,Desktop
+1121.31,Transfer,Failed,FALSE,Mobile
+308.66,Withdrawal,Success,FALSE,Desktop
+841.79,Withdrawal,Success,TRUE,Mobile
+189.14,Transfer,Failed,TRUE,Desktop
+1054.35,Deposit,Success,FALSE,Desktop
+1483.09,Transfer,Failed,FALSE,Desktop
+645.4,Withdrawal,Failed,FALSE,Desktop
+536.4,Transfer,Success,TRUE,Mobile
+1098.59,Transfer,Failed,TRUE,Desktop
+1096.78,Transfer,Success,TRUE,Desktop
+258.8,Deposit,Failed,TRUE,Desktop
+1372.5,Transfer,Failed,TRUE,Desktop
+549.88,Deposit,Success,FALSE,Desktop
+472.7,Transfer,Failed,TRUE,Desktop
+296.54,Transfer,Failed,TRUE,Mobile
+435.39,Transfer,Failed,TRUE,Desktop
+1445.47,Deposit,Failed,FALSE,Desktop
+334.45,Transfer,Failed,TRUE,Desktop
+457.97,Transfer,Success,FALSE,Desktop
+1304.37,Transfer,Failed,TRUE,Desktop
+936.43,Transfer,Success,FALSE,Mobile
+1228,Withdrawal,Failed,TRUE,Mobile
+615.2,Deposit,Success,FALSE,Desktop
+1231.61,Deposit,Success,TRUE,Desktop
+349.49,Withdrawal,Failed,FALSE,Desktop
+454.59,Deposit,Success,TRUE,Desktop
+657.19,Deposit,Failed,FALSE,Desktop
+1149.81,Deposit,Success,TRUE,Mobile
+298.71,Withdrawal,Failed,FALSE,Desktop
+1060.59,Withdrawal,Success,FALSE,Desktop
+988.73,Withdrawal,Success,TRUE,Desktop
+1026.97,Transfer,Success,FALSE,Mobile
+69.81,Withdrawal,Failed,FALSE,Desktop
+716.02,Withdrawal,Failed,FALSE,Desktop
+865.15,Deposit,Success,TRUE,Desktop
+1226.35,Transfer,Success,TRUE,Mobile
+99.03,Transfer,Failed,FALSE,Desktop
+58.13,Withdrawal,Success,FALSE,Desktop
+103.8,Withdrawal,Failed,FALSE,Mobile
+729.84,Deposit,Failed,TRUE,Desktop
+755.82,Deposit,Failed,FALSE,Desktop
+406.25,Deposit,Success,FALSE,Mobile
+531.26,Transfer,Failed,FALSE,Mobile
+280.31,Transfer,Failed,FALSE,Desktop
+1365.35,Transfer,Success,FALSE,Desktop
+914.96,Deposit,Success,FALSE,Mobile
+1081.34,Deposit,Failed,TRUE,Mobile
+993.15,Deposit,Failed,TRUE,Desktop
+286.5,Transfer,Failed,FALSE,Mobile
+229.22,Deposit,Failed,FALSE,Desktop
+594.59,Transfer,Success,TRUE,Mobile
+1090.28,Transfer,Success,FALSE,Desktop
+1229.47,Withdrawal,Success,FALSE,Desktop
+827.28,Transfer,Failed,TRUE,Mobile
+985.95,Withdrawal,Failed,TRUE,Desktop
+854.53,Withdrawal,Success,TRUE,Mobile
+1170.07,Withdrawal,Failed,FALSE,Mobile
+1196.04,Deposit,Success,TRUE,Mobile
+99.09,Deposit,Success,FALSE,Desktop
+420.86,Deposit,Success,FALSE,Mobile
+292.99,Withdrawal,Success,FALSE,Desktop
+996.89,Withdrawal,Success,TRUE,Desktop
+1040.45,Transfer,Failed,FALSE,Desktop
+476.97,Transfer,Success,FALSE,Mobile
+241.5,Deposit,Success,TRUE,Mobile
+463.4,Deposit,Success,FALSE,Mobile
+950.03,Deposit,Failed,TRUE,Mobile
+499.71,Transfer,Failed,TRUE,Mobile
+978.12,Deposit,Failed,TRUE,Mobile
+692.55,Deposit,Failed,TRUE,Desktop
+569.57,Deposit,Success,FALSE,Desktop
+766.78,Transfer,Failed,FALSE,Desktop
+1364.8,Withdrawal,Failed,FALSE,Desktop
+287.89,Deposit,Failed,TRUE,Mobile
+1012.1,Transfer,Failed,TRUE,Desktop
+1497.76,Transfer,Success,TRUE,Desktop
+477.66,Transfer,Failed,FALSE,Desktop
+895.62,Transfer,Failed,FALSE,Desktop
+176.46,Transfer,Success,TRUE,Mobile
+53.53,Deposit,Failed,TRUE,Mobile
+233.95,Deposit,Failed,FALSE,Desktop
+1058.41,Transfer,Success,FALSE,Desktop
+599.56,Deposit,Failed,TRUE,Desktop
+429.38,Transfer,Failed,FALSE,Desktop
+1434.83,Withdrawal,Success,FALSE,Mobile
+892.35,Transfer,Success,TRUE,Desktop
+1009.5,Withdrawal,Success,TRUE,Mobile
+407.18,Deposit,Success,FALSE,Desktop
+530.77,Transfer,Failed,TRUE,Mobile
+548.93,Transfer,Failed,TRUE,Mobile
+934.63,Deposit,Failed,FALSE,Mobile
+985.07,Transfer,Failed,TRUE,Desktop
+1157.76,Withdrawal,Failed,TRUE,Mobile
+256.07,Withdrawal,Failed,FALSE,Mobile
+1222.13,Withdrawal,Success,FALSE,Desktop
+97.22,Withdrawal,Failed,FALSE,Mobile
+474.4,Transfer,Failed,FALSE,Desktop
+63.23,Transfer,Success,FALSE,Mobile
+1464.96,Deposit,Success,FALSE,Mobile
+806.29,Deposit,Failed,TRUE,Desktop
+1181.75,Deposit,Failed,TRUE,Desktop
+201.5,Transfer,Failed,FALSE,Mobile
+128.78,Transfer,Success,FALSE,Desktop
+439.79,Withdrawal,Success,TRUE,Desktop
+1011.54,Deposit,Success,TRUE,Desktop
+483.75,Deposit,Success,TRUE,Mobile
+678.01,Transfer,Failed,FALSE,Mobile
+597.43,Transfer,Failed,FALSE,Desktop
+1172.11,Withdrawal,Success,TRUE,Mobile
+919.33,Transfer,Failed,FALSE,Mobile
+1331.78,Transfer,Success,TRUE,Mobile
+1304.24,Deposit,Failed,TRUE,Mobile
+229.96,Transfer,Success,FALSE,Desktop
+951.98,Transfer,Failed,FALSE,Mobile
+822.01,Deposit,Success,TRUE,Desktop
+160,Transfer,Success,FALSE,Desktop
+832.4,Transfer,Failed,FALSE,Mobile
+1076.04,Withdrawal,Failed,FALSE,Desktop
+654.74,Transfer,Success,TRUE,Mobile
+280.59,Deposit,Success,FALSE,Desktop
+1390.33,Withdrawal,Success,TRUE,Desktop
+417.93,Withdrawal,Success,FALSE,Mobile
+1249.53,Deposit,Failed,FALSE,Mobile
+1304.23,Transfer,Success,FALSE,Desktop
+775.27,Transfer,Success,TRUE,Mobile
+407.35,Withdrawal,Failed,TRUE,Desktop
+662.75,Withdrawal,Success,FALSE,Desktop
+269.99,Withdrawal,Success,FALSE,Mobile
+1393.08,Withdrawal,Success,TRUE,Desktop
+380.22,Deposit,Success,TRUE,Mobile
+117.67,Withdrawal,Failed,FALSE,Desktop
+693.77,Deposit,Success,TRUE,Desktop
+91.57,Deposit,Success,FALSE,Mobile
+1453.16,Transfer,Success,FALSE,Desktop
+798.88,Transfer,Success,FALSE,Mobile
+94.08,Withdrawal,Failed,TRUE,Desktop
+129.36,Withdrawal,Failed,FALSE,Mobile
+320.15,Deposit,Success,FALSE,Mobile
+628.16,Deposit,Failed,FALSE,Mobile
+312.62,Withdrawal,Success,FALSE,Desktop
+594.88,Transfer,Success,TRUE,Mobile
+1107.97,Transfer,Success,TRUE,Desktop
+466.07,Transfer,Failed,FALSE,Desktop
+485.51,Deposit,Success,TRUE,Mobile
+1290.77,Transfer,Success,FALSE,Mobile
+391.02,Transfer,Success,TRUE,Mobile
+1297.35,Transfer,Failed,TRUE,Desktop
+134.07,Withdrawal,Failed,TRUE,Mobile
+420.97,Deposit,Success,TRUE,Desktop
+224.14,Transfer,Success,FALSE,Mobile
+1043.24,Transfer,Success,TRUE,Mobile
+555.97,Transfer,Success,TRUE,Mobile
+319.68,Deposit,Failed,TRUE,Mobile
+978.39,Deposit,Success,FALSE,Desktop
+894.94,Transfer,Success,FALSE,Desktop
+1272.62,Withdrawal,Failed,TRUE,Desktop
+260.21,Withdrawal,Success,FALSE,Desktop
+349.61,Transfer,Failed,TRUE,Mobile
+259,Withdrawal,Success,FALSE,Desktop
+102.81,Transfer,Success,FALSE,Mobile
+396.54,Withdrawal,Success,FALSE,Mobile
+794.73,Deposit,Success,TRUE,Mobile
+1404.91,Withdrawal,Failed,FALSE,Desktop
+88.64,Withdrawal,Failed,TRUE,Mobile
+890.83,Withdrawal,Failed,FALSE,Desktop
+1360.18,Withdrawal,Failed,TRUE,Desktop
+1181.01,Transfer,Success,FALSE,Mobile
+766.93,Withdrawal,Failed,TRUE,Mobile
+350.01,Withdrawal,Failed,FALSE,Mobile
+116.93,Withdrawal,Success,TRUE,Mobile
+1460.24,Transfer,Failed,FALSE,Mobile
+1205.92,Withdrawal,Failed,TRUE,Mobile
+263.79,Transfer,Failed,TRUE,Desktop
+597.89,Withdrawal,Failed,TRUE,Mobile
+275.18,Transfer,Success,TRUE,Desktop
+337.39,Deposit,Failed,FALSE,Mobile
+152.01,Withdrawal,Failed,TRUE,Desktop
+523.92,Transfer,Failed,TRUE,Mobile
+1010.44,Withdrawal,Success,TRUE,Mobile
+1319.31,Transfer,Failed,TRUE,Mobile
+1015.37,Transfer,Success,TRUE,Mobile
+159.86,Deposit,Success,TRUE,Desktop
+977.23,Deposit,Success,TRUE,Mobile
+113.55,Withdrawal,Failed,FALSE,Mobile
+1122.6,Withdrawal,Success,FALSE,Desktop
+1245.9,Deposit,Failed,TRUE,Desktop
+1091.63,Withdrawal,Failed,FALSE,Mobile
+420.94,Withdrawal,Success,TRUE,Desktop
+268.65,Transfer,Success,TRUE,Desktop
+897.39,Deposit,Failed,TRUE,Mobile
+1478.53,Transfer,Failed,FALSE,Mobile
+1000.94,Deposit,Failed,TRUE,Mobile
+543.02,Deposit,Failed,FALSE,Desktop
+615.92,Deposit,Success,TRUE,Desktop
+783.76,Withdrawal,Failed,TRUE,Desktop
+1085.26,Deposit,Failed,FALSE,Mobile
+69.26,Withdrawal,Failed,FALSE,Mobile
+649.53,Transfer,Failed,FALSE,Mobile
+893.51,Deposit,Failed,FALSE,Desktop
+978.2,Deposit,Failed,TRUE,Desktop
+1324.85,Withdrawal,Success,TRUE,Mobile
+121.48,Transfer,Success,FALSE,Desktop
+614.72,Withdrawal,Success,FALSE,Desktop
+807.82,Deposit,Success,TRUE,Desktop
+1454.09,Deposit,Failed,FALSE,Desktop
+1263.45,Deposit,Success,FALSE,Desktop
+567.4,Deposit,Success,TRUE,Desktop
+892.61,Deposit,Success,FALSE,Mobile
+633.35,Deposit,Failed,FALSE,Desktop
+746.64,Deposit,Success,TRUE,Mobile
+528.35,Withdrawal,Success,FALSE,Desktop
+624.86,Withdrawal,Failed,FALSE,Mobile
+1346.57,Withdrawal,Failed,TRUE,Desktop
+535.09,Deposit,Failed,FALSE,Mobile
+668.52,Deposit,Failed,FALSE,Mobile
+487.74,Transfer,Success,TRUE,Mobile
+215.42,Deposit,Success,FALSE,Desktop
+786.57,Transfer,Success,TRUE,Mobile
+1263.21,Withdrawal,Failed,FALSE,Desktop
+396.08,Transfer,Failed,TRUE,Mobile
+714.58,Transfer,Success,FALSE,Mobile
+643.4,Transfer,Success,FALSE,Desktop
+1333.87,Withdrawal,Success,FALSE,Mobile
+1292.55,Transfer,Failed,FALSE,Desktop
+1209.22,Deposit,Success,TRUE,Desktop
+971.32,Withdrawal,Success,FALSE,Desktop
+155.79,Deposit,Failed,TRUE,Mobile
+337.59,Transfer,Success,FALSE,Mobile
+540.97,Transfer,Failed,TRUE,Desktop
+511,Withdrawal,Failed,FALSE,Mobile
+1211.34,Withdrawal,Failed,TRUE,Mobile
+1468.59,Transfer,Failed,TRUE,Mobile
+364.2,Withdrawal,Success,FALSE,Mobile
+1357.71,Deposit,Failed,TRUE,Mobile
+364.83,Deposit,Failed,TRUE,Mobile
+236.8,Transfer,Success,FALSE,Desktop
+937.09,Deposit,Success,FALSE,Desktop
+1220.92,Transfer,Success,TRUE,Mobile
+1314.12,Deposit,Success,FALSE,Mobile
+892.08,Withdrawal,Success,TRUE,Desktop
+737.44,Withdrawal,Success,FALSE,Mobile
+498.23,Deposit,Failed,FALSE,Desktop
+395.37,Transfer,Success,FALSE,Desktop
+160.93,Transfer,Failed,FALSE,Mobile
+1356.11,Transfer,Failed,FALSE,Desktop
+1130.72,Deposit,Failed,FALSE,Desktop
+645.72,Deposit,Success,TRUE,Desktop
+1189.27,Deposit,Success,FALSE,Desktop
+914.39,Transfer,Failed,TRUE,Mobile
+171.75,Deposit,Failed,FALSE,Mobile
+1331.35,Withdrawal,Failed,TRUE,Desktop
+1145.85,Withdrawal,Success,FALSE,Desktop
+948.68,Withdrawal,Failed,TRUE,Desktop
+1292.74,Transfer,Failed,TRUE,Desktop
+1246.19,Deposit,Failed,FALSE,Desktop
+861.73,Withdrawal,Success,FALSE,Desktop
+1188.37,Deposit,Success,TRUE,Mobile
+478.3,Withdrawal,Failed,FALSE,Mobile
+1493.27,Withdrawal,Success,FALSE,Desktop
+1483.4,Withdrawal,Failed,FALSE,Mobile
+1447.48,Deposit,Failed,FALSE,Mobile
+741.61,Transfer,Success,FALSE,Mobile
+922.96,Withdrawal,Failed,TRUE,Desktop
+672.07,Transfer,Failed,FALSE,Desktop
+1190.81,Transfer,Success,FALSE,Mobile
+890.4,Withdrawal,Success,TRUE,Desktop
+953.94,Withdrawal,Failed,FALSE,Mobile
+1113.31,Transfer,Failed,FALSE,Desktop
+608.07,Transfer,Success,FALSE,Desktop
+1186.59,Withdrawal,Failed,TRUE,Mobile
+256.17,Transfer,Failed,FALSE,Desktop
+459.19,Transfer,Failed,FALSE,Desktop
+82.26,Transfer,Success,FALSE,Desktop
+741.53,Transfer,Success,FALSE,Mobile
+447.12,Withdrawal,Success,TRUE,Desktop
+140.89,Withdrawal,Failed,FALSE,Mobile
+273.81,Withdrawal,Success,TRUE,Mobile
+1449.24,Deposit,Success,FALSE,Mobile
+1191.44,Withdrawal,Failed,TRUE,Mobile
+523.24,Withdrawal,Failed,TRUE,Mobile
+142.3,Deposit,Success,TRUE,Mobile
+1224.01,Deposit,Success,TRUE,Desktop
+1310,Deposit,Failed,TRUE,Desktop
+95.1,Withdrawal,Failed,FALSE,Mobile
+561.12,Withdrawal,Failed,FALSE,Desktop
+712.91,Deposit,Failed,TRUE,Mobile
+659.93,Transfer,Success,FALSE,Desktop
+411.08,Transfer,Success,FALSE,Desktop
+131.53,Transfer,Failed,FALSE,Desktop
+1122.89,Transfer,Success,TRUE,Mobile
+218.74,Withdrawal,Failed,FALSE,Mobile
+1080.59,Deposit,Success,FALSE,Desktop
+1284.02,Deposit,Failed,FALSE,Desktop
+1316.57,Transfer,Failed,FALSE,Desktop
+943.59,Withdrawal,Success,FALSE,Desktop
+592.7,Deposit,Failed,TRUE,Mobile
+1279.75,Transfer,Failed,TRUE,Desktop
+1445.66,Withdrawal,Success,TRUE,Mobile
+723.43,Transfer,Failed,TRUE,Desktop
+86.27,Deposit,Failed,FALSE,Desktop
+366.82,Withdrawal,Success,FALSE,Desktop
+1166.16,Deposit,Success,FALSE,Mobile
+1488.93,Deposit,Failed,TRUE,Mobile
+420.72,Transfer,Success,FALSE,Desktop
+1123.86,Deposit,Success,FALSE,Desktop
+976.48,Deposit,Failed,FALSE,Mobile
+546.59,Transfer,Failed,TRUE,Desktop
+984.69,Withdrawal,Success,TRUE,Desktop
+124.97,Transfer,Success,TRUE,Desktop
+376.24,Deposit,Failed,TRUE,Mobile
+1113.62,Transfer,Success,FALSE,Desktop
+1399.98,Transfer,Failed,TRUE,Mobile
+99.92,Deposit,Success,TRUE,Mobile
+497.89,Transfer,Failed,FALSE,Mobile
+902,Transfer,Failed,FALSE,Desktop
+908.73,Transfer,Success,FALSE,Mobile
+368.3,Withdrawal,Success,TRUE,Desktop
+166.5,Withdrawal,Failed,FALSE,Desktop
+954.31,Transfer,Failed,TRUE,Desktop
+622.19,Transfer,Failed,FALSE,Mobile
+1411.27,Withdrawal,Failed,TRUE,Desktop
+1033.4,Withdrawal,Success,FALSE,Desktop
+1155.76,Deposit,Failed,FALSE,Desktop
+1286.89,Deposit,Success,FALSE,Mobile
+1117.55,Deposit,Failed,FALSE,Desktop
+1012.68,Deposit,Success,FALSE,Desktop
+1093.97,Deposit,Failed,TRUE,Mobile
+782.21,Deposit,Failed,TRUE,Desktop
+738.34,Deposit,Success,TRUE,Mobile
+79.96,Withdrawal,Success,FALSE,Mobile
+138.44,Transfer,Success,FALSE,Mobile
+781.77,Withdrawal,Success,FALSE,Desktop
+420.19,Deposit,Failed,TRUE,Mobile
+1452.12,Deposit,Failed,TRUE,Desktop
+191.15,Transfer,Failed,TRUE,Mobile
+1132.23,Bill Payment,Success,FALSE,Mobile
+668.82,Cheque Deposit,Success,FALSE,Mobile
+685.34,POS Purchase,Success,TRUE,Mobile
+1391.28,ATM Withdrawal,Success,TRUE,Mobile
+958.98,POS Purchase,Success,FALSE,Desktop
+621.44,Cheque Deposit,Success,TRUE,Desktop
+1035.25,POS Purchase,Success,TRUE,Mobile
+769.38,POS Purchase,Success,FALSE,Mobile
+235.97,Bill Payment,Success,TRUE,Desktop
+350.45,Bill Payment,Failed,FALSE,Desktop
+802.61,POS Purchase,Failed,TRUE,Desktop
+1475.38,Online Transfer,Success,FALSE,Mobile
+401.53,ATM Withdrawal,Success,FALSE,Mobile
+1176.88,Cheque Deposit,Success,FALSE,Mobile
+1494.03,Bill Payment,Success,TRUE,Desktop
+1090.87,Bill Payment,Failed,TRUE,Desktop
+427.54,Online Transfer,Failed,FALSE,Desktop
+1411.39,Online Transfer,Failed,TRUE,Desktop
+1026,Bill Payment,Success,FALSE,Desktop
+217.64,ATM Withdrawal,Failed,TRUE,Desktop
+1449.78,Cheque Deposit,Success,TRUE,Desktop
+1003.45,POS Purchase,Success,FALSE,Desktop
+1229.3,Cheque Deposit,Success,TRUE,Desktop
+251.82,Bill Payment,Success,TRUE,Mobile
+815.81,ATM Withdrawal,Failed,TRUE,Desktop
+931.5,ATM Withdrawal,Failed,TRUE,Mobile
+503.36,Cheque Deposit,Failed,TRUE,Mobile
+609.1,Online Transfer,Failed,FALSE,Desktop
+479.45,POS Purchase,Failed,TRUE,Mobile
+592.71,Online Transfer,Failed,TRUE,Mobile
+344.15,Cheque Deposit,Success,TRUE,Mobile
+726.81,POS Purchase,Failed,FALSE,Mobile
+299.45,ATM Withdrawal,Success,TRUE,Mobile
+747.08,Online Transfer,Success,TRUE,Desktop
+193.87,Online Transfer,Failed,FALSE,Mobile
+386.64,Online Transfer,Success,TRUE,Desktop
+105.99,Cheque Deposit,Failed,TRUE,Desktop
+1211.94,Online Transfer,Success,FALSE,Desktop
+451.03,Cheque Deposit,Success,TRUE,Mobile
+1229.83,POS Purchase,Failed,TRUE,Desktop
+150.68,POS Purchase,Success,TRUE,Mobile
+760.84,Cheque Deposit,Failed,FALSE,Mobile
+849.81,Cheque Deposit,Failed,TRUE,Mobile
+926.66,Bill Payment,Success,TRUE,Mobile
+1429.67,Bill Payment,Success,TRUE,Desktop
+327.76,Bill Payment,Success,FALSE,Desktop
+845.26,POS Purchase,Failed,FALSE,Desktop
+417.63,Online Transfer,Success,TRUE,Desktop
+726.13,Cheque Deposit,Success,TRUE,Mobile
+1436.4,POS Purchase,Success,FALSE,Desktop
+481.5,POS Purchase,Success,FALSE,Desktop
+1085.85,ATM Withdrawal,Failed,TRUE,Desktop
+847.66,Bill Payment,Failed,TRUE,Mobile
+1419.74,Online Transfer,Failed,FALSE,Desktop
+1144.79,ATM Withdrawal,Success,TRUE,Desktop
+1193.2,Online Transfer,Failed,TRUE,Mobile
+1134,ATM Withdrawal,Success,TRUE,Desktop
+1437.81,Cheque Deposit,Failed,FALSE,Mobile
+1485.22,ATM Withdrawal,Failed,FALSE,Mobile
+1254.83,Online Transfer,Success,FALSE,Desktop
+135.33,POS Purchase,Failed,TRUE,Mobile
+725.84,ATM Withdrawal,Success,FALSE,Desktop
+374.88,POS Purchase,Failed,TRUE,Mobile
+226.12,POS Purchase,Failed,FALSE,Mobile
+827.52,Online Transfer,Failed,TRUE,Desktop
+468.29,POS Purchase,Failed,TRUE,Desktop
+534.53,POS Purchase,Failed,TRUE,Mobile
+921.16,ATM Withdrawal,Success,FALSE,Desktop
+1174.09,Cheque Deposit,Failed,TRUE,Desktop
+1409.54,Cheque Deposit,Success,TRUE,Mobile
+493.04,Online Transfer,Success,TRUE,Mobile
+875.82,Cheque Deposit,Failed,TRUE,Desktop
+1395.74,Bill Payment,Success,TRUE,Mobile
+1090.7,Bill Payment,Success,FALSE,Desktop
+152.45,Cheque Deposit,Failed,FALSE,Desktop
+939.81,Cheque Deposit,Success,FALSE,Mobile
+530.44,POS Purchase,Failed,FALSE,Mobile
+1119.13,Online Transfer,Failed,FALSE,Mobile
+145.6,Bill Payment,Failed,TRUE,Mobile
+265.48,Bill Payment,Failed,FALSE,Desktop
+512.81,ATM Withdrawal,Failed,TRUE,Desktop
+894.19,ATM Withdrawal,Success,TRUE,Mobile
+1093.08,Online Transfer,Success,TRUE,Mobile
+717.43,ATM Withdrawal,Success,TRUE,Desktop
+912.78,POS Purchase,Success,FALSE,Desktop
+1441.89,Bill Payment,Failed,TRUE,Desktop
+1081.52,ATM Withdrawal,Failed,FALSE,Mobile
+1159.52,POS Purchase,Failed,TRUE,Mobile
+646.48,Cheque Deposit,Failed,FALSE,Desktop
+1108.3,Bill Payment,Failed,TRUE,Desktop
+904.54,ATM Withdrawal,Success,TRUE,Mobile
+1493.86,Online Transfer,Failed,FALSE,Mobile
+662.74,ATM Withdrawal,Failed,FALSE,Mobile
+1119.63,ATM Withdrawal,Failed,FALSE,Desktop
+1245.19,Bill Payment,Success,FALSE,Mobile
+1275.28,Cheque Deposit,Success,FALSE,Desktop
+946.2,POS Purchase,Failed,TRUE,Mobile
+228.45,POS Purchase,Success,FALSE,Desktop
+734.99,Online Transfer,Failed,FALSE,Desktop
+220.56,Cheque Deposit,Failed,FALSE,Mobile
+87.4,Cheque Deposit,Success,TRUE,Desktop
+245.59,Cheque Deposit,Failed,TRUE,Desktop
+115.33,POS Purchase,Success,FALSE,Mobile
+424.14,Bill Payment,Failed,FALSE,Desktop
+118.47,Cheque Deposit,Failed,TRUE,Mobile
+733.38,Bill Payment,Success,TRUE,Mobile
+927.51,Online Transfer,Success,TRUE,Mobile
+507.14,Online Transfer,Success,TRUE,Desktop
+147.52,Cheque Deposit,Success,TRUE,Desktop
+909.99,ATM Withdrawal,Success,FALSE,Mobile
+725.22,ATM Withdrawal,Failed,TRUE,Desktop
+1370.46,Cheque Deposit,Success,TRUE,Mobile
+827.33,Bill Payment,Failed,TRUE,Desktop
+1133.84,Cheque Deposit,Success,FALSE,Mobile
+59.49,ATM Withdrawal,Failed,TRUE,Desktop
+602.34,Cheque Deposit,Success,TRUE,Desktop
+897.01,Bill Payment,Success,FALSE,Desktop
+692.63,Bill Payment,Success,FALSE,Mobile
+968.11,POS Purchase,Success,FALSE,Mobile
+676.86,Cheque Deposit,Failed,FALSE,Desktop
+163.42,Bill Payment,Failed,TRUE,Mobile
+676.31,POS Purchase,Failed,TRUE,Mobile
+1090.51,Bill Payment,Success,FALSE,Mobile
+954.23,Online Transfer,Success,TRUE,Mobile
+800.64,Cheque Deposit,Success,FALSE,Desktop
+727.62,Cheque Deposit,Success,FALSE,Desktop
+1257.79,POS Purchase,Success,FALSE,Desktop
+1364.73,Bill Payment,Failed,FALSE,Desktop
+1070.75,Cheque Deposit,Success,FALSE,Desktop
+348.58,Bill Payment,Success,TRUE,Desktop
+721.39,POS Purchase,Failed,FALSE,Desktop
+688.03,POS Purchase,Success,FALSE,Desktop
+1002.18,Bill Payment,Failed,FALSE,Desktop
+78.53,Bill Payment,Failed,FALSE,Mobile
+86.89,ATM Withdrawal,Failed,FALSE,Mobile
+1283.15,Online Transfer,Failed,TRUE,Mobile
+275.82,Bill Payment,Success,TRUE,Mobile
+231.96,ATM Withdrawal,Failed,TRUE,Mobile
+1413.64,Online Transfer,Success,FALSE,Mobile
+558.08,ATM Withdrawal,Success,TRUE,Desktop
+1420.72,Cheque Deposit,Failed,FALSE,Desktop
+855.53,Bill Payment,Success,TRUE,Mobile
+1221.82,ATM Withdrawal,Failed,FALSE,Desktop
+109.93,Bill Payment,Failed,TRUE,Mobile
+329.15,POS Purchase,Success,TRUE,Desktop
+1372.23,Online Transfer,Failed,FALSE,Desktop
+1190.88,Online Transfer,Failed,TRUE,Mobile
+58.69,ATM Withdrawal,Failed,FALSE,Mobile
+345.62,Online Transfer,Failed,FALSE,Desktop
+438.45,Cheque Deposit,Failed,TRUE,Mobile
+54.96,ATM Withdrawal,Success,FALSE,Mobile
+1191.92,Cheque Deposit,Failed,TRUE,Mobile
+881.39,ATM Withdrawal,Success,TRUE,Desktop
+890.41,Bill Payment,Success,FALSE,Desktop
+1031.4,Online Transfer,Success,FALSE,Desktop
+1494.2,Online Transfer,Failed,TRUE,Mobile
+224.29,Cheque Deposit,Failed,FALSE,Desktop
+1272.93,POS Purchase,Failed,FALSE,Desktop
+1427.83,Cheque Deposit,Failed,TRUE,Mobile
+671.09,Cheque Deposit,Success,TRUE,Mobile
+149.22,Cheque Deposit,Success,TRUE,Mobile
+918.7,Cheque Deposit,Success,TRUE,Mobile
+1479.46,Bill Payment,Failed,TRUE,Desktop
+427.26,ATM Withdrawal,Success,FALSE,Desktop
+1037.73,Bill Payment,Failed,FALSE,Desktop
+630.84,ATM Withdrawal,Failed,FALSE,Desktop
+1133.66,ATM Withdrawal,Success,FALSE,Desktop
+55.17,ATM Withdrawal,Failed,FALSE,Mobile
+293.9,ATM Withdrawal,Success,FALSE,Mobile
+440.3,Online Transfer,Failed,FALSE,Desktop
+1022.55,POS Purchase,Failed,TRUE,Desktop
+739.69,Bill Payment,Failed,FALSE,Desktop
+1184.41,POS Purchase,Failed,FALSE,Mobile
+806.15,POS Purchase,Failed,FALSE,Desktop
+1346.22,ATM Withdrawal,Failed,TRUE,Desktop
+1351.47,Bill Payment,Failed,TRUE,Mobile
+741.96,ATM Withdrawal,Success,TRUE,Mobile
+1435.51,Bill Payment,Success,FALSE,Mobile
+304.9,Bill Payment,Failed,TRUE,Mobile
+741.72,ATM Withdrawal,Success,FALSE,Mobile
+487.33,Cheque Deposit,Success,TRUE,Mobile
+501.06,Online Transfer,Success,TRUE,Desktop
+1398.62,ATM Withdrawal,Success,FALSE,Mobile
+295.86,ATM Withdrawal,Failed,FALSE,Desktop
+369.79,Cheque Deposit,Success,FALSE,Mobile
+1062.28,POS Purchase,Failed,FALSE,Desktop
+306.68,Online Transfer,Success,FALSE,Desktop
+546.48,Cheque Deposit,Failed,FALSE,Desktop
+662.62,Cheque Deposit,Success,FALSE,Desktop
+827.95,ATM Withdrawal,Failed,FALSE,Desktop
+935.02,Bill Payment,Failed,FALSE,Desktop
+1087.67,POS Purchase,Failed,FALSE,Desktop
+519.04,Online Transfer,Success,FALSE,Mobile
+171.92,POS Purchase,Failed,FALSE,Mobile
+827.11,Cheque Deposit,Success,FALSE,Mobile
+108.56,Bill Payment,Failed,TRUE,Mobile
+1234.66,ATM Withdrawal,Failed,TRUE,Mobile
+485.89,Bill Payment,Failed,TRUE,Desktop
+106.01,Bill Payment,Failed,TRUE,Mobile
+378.83,ATM Withdrawal,Success,TRUE,Desktop
+654.1,ATM Withdrawal,Failed,TRUE,Desktop
+1318.57,Bill Payment,Failed,TRUE,Mobile
+394.98,ATM Withdrawal,Success,FALSE,Desktop
+448.07,POS Purchase,Failed,TRUE,Desktop
+799.39,Bill Payment,Success,TRUE,Mobile
+1277.1,POS Purchase,Failed,TRUE,Mobile
+723.45,POS Purchase,Success,TRUE,Desktop
+602.08,Bill Payment,Failed,FALSE,Mobile
+1251.19,Cheque Deposit,Failed,TRUE,Desktop
+660.16,Bill Payment,Failed,FALSE,Mobile
+1172.55,Online Transfer,Success,TRUE,Mobile
+404.35,ATM Withdrawal,Success,FALSE,Desktop
+1467.44,ATM Withdrawal,Success,TRUE,Desktop
+384.21,Cheque Deposit,Failed,FALSE,Mobile
+198.65,ATM Withdrawal,Failed,FALSE,Desktop
+1041.32,Bill Payment,Failed,TRUE,Mobile
+864.58,ATM Withdrawal,Success,TRUE,Desktop
+1241.46,Cheque Deposit,Failed,TRUE,Desktop
+1398.95,Online Transfer,Success,TRUE,Mobile
+1431.06,Cheque Deposit,Success,TRUE,Mobile
+698.69,Bill Payment,Success,TRUE,Mobile
+582.69,POS Purchase,Failed,TRUE,Desktop
+915.57,POS Purchase,Failed,FALSE,Mobile
+766.64,Bill Payment,Success,FALSE,Mobile
+559.49,Online Transfer,Failed,TRUE,Desktop
+1017.57,Cheque Deposit,Success,TRUE,Mobile
+1326.71,POS Purchase,Success,FALSE,Mobile
+1327.89,POS Purchase,Success,TRUE,Mobile
+601.16,POS Purchase,Failed,FALSE,Mobile
+1053.94,POS Purchase,Success,FALSE,Desktop
+250.92,ATM Withdrawal,Failed,FALSE,Desktop
+1233.39,Cheque Deposit,Success,FALSE,Mobile
+495.85,POS Purchase,Success,TRUE,Desktop
+641.56,POS Purchase,Success,TRUE,Mobile
+978.9,POS Purchase,Success,FALSE,Desktop
+376.95,Cheque Deposit,Failed,FALSE,Mobile
+920.92,ATM Withdrawal,Success,TRUE,Desktop
+891.01,ATM Withdrawal,Failed,TRUE,Desktop
+1117.59,Bill Payment,Failed,FALSE,Desktop
+165.65,Bill Payment,Success,TRUE,Desktop
+1211.91,Cheque Deposit,Success,TRUE,Mobile
+1331.16,Online Transfer,Success,FALSE,Mobile
+641.13,POS Purchase,Success,FALSE,Mobile
+653.41,ATM Withdrawal,Success,TRUE,Mobile
+1307.54,Cheque Deposit,Failed,TRUE,Mobile
+396.91,POS Purchase,Failed,FALSE,Mobile
+1458.87,Bill Payment,Failed,FALSE,Mobile
+1073.28,Online Transfer,Success,FALSE,Mobile
+1362.38,Bill Payment,Failed,TRUE,Desktop
+659.9,Cheque Deposit,Success,FALSE,Mobile
+56.93,POS Purchase,Failed,FALSE,Desktop
+219.4,POS Purchase,Success,TRUE,Desktop
+1114.74,POS Purchase,Success,TRUE,Desktop
+252.71,Cheque Deposit,Failed,FALSE,Desktop
+358.53,Online Transfer,Failed,FALSE,Mobile
+207.64,POS Purchase,Failed,FALSE,Mobile
+92.76,Bill Payment,Failed,FALSE,Mobile
+1271.43,POS Purchase,Failed,FALSE,Desktop
+1149.69,Cheque Deposit,Success,TRUE,Mobile
+91.93,Online Transfer,Success,TRUE,Mobile
+1386.49,Online Transfer,Success,TRUE,Mobile
+1120.65,Bill Payment,Success,TRUE,Mobile
+596.1,POS Purchase,Success,FALSE,Mobile
+129.93,Bill Payment,Success,FALSE,Desktop
+1201.84,Cheque Deposit,Success,FALSE,Mobile
+1257.78,Bill Payment,Failed,FALSE,Desktop
+1148.58,Bill Payment,Success,FALSE,Desktop
+570.72,POS Purchase,Failed,FALSE,Desktop
+655.7,Online Transfer,Success,FALSE,Desktop
+555.28,Online Transfer,Success,FALSE,Mobile
+333.77,Cheque Deposit,Success,FALSE,Mobile
+731.29,Bill Payment,Success,FALSE,Desktop
+192.43,Cheque Deposit,Success,TRUE,Mobile
+810.23,POS Purchase,Failed,FALSE,Mobile
+341.45,POS Purchase,Failed,TRUE,Mobile
+1003.51,POS Purchase,Failed,FALSE,Mobile
+938.65,Bill Payment,Success,FALSE,Desktop
+1398.09,Cheque Deposit,Failed,TRUE,Mobile
+958.18,ATM Withdrawal,Success,FALSE,Desktop
+938.68,Cheque Deposit,Failed,TRUE,Mobile
+800.31,POS Purchase,Failed,TRUE,Mobile
+1307.8,Cheque Deposit,Success,FALSE,Mobile
+1184.61,Cheque Deposit,Success,TRUE,Desktop
+89.69,Cheque Deposit,Failed,TRUE,Desktop
+990.36,ATM Withdrawal,Failed,FALSE,Mobile
+1355.61,ATM Withdrawal,Failed,FALSE,Mobile
+1457.81,POS Purchase,Success,FALSE,Desktop
+193.35,Bill Payment,Failed,TRUE,Desktop
+1250.73,Bill Payment,Success,TRUE,Desktop
+641.89,Online Transfer,Success,TRUE,Mobile
+548.18,POS Purchase,Failed,TRUE,Mobile
+93.19,Cheque Deposit,Failed,FALSE,Desktop
+974.06,ATM Withdrawal,Failed,TRUE,Desktop
+1325.97,Bill Payment,Failed,FALSE,Desktop
+71.67,Cheque Deposit,Failed,FALSE,Desktop
+1279.03,ATM Withdrawal,Success,FALSE,Desktop
+788.22,ATM Withdrawal,Failed,TRUE,Desktop
+274.99,POS Purchase,Success,FALSE,Mobile
+385.75,Cheque Deposit,Failed,TRUE,Mobile
+819.88,ATM Withdrawal,Failed,TRUE,Mobile
+500.19,Online Transfer,Success,FALSE,Mobile
+703.97,Online Transfer,Success,FALSE,Desktop
+773.32,ATM Withdrawal,Failed,TRUE,Mobile
+1127.88,POS Purchase,Failed,TRUE,Mobile
+1032.59,ATM Withdrawal,Success,TRUE,Desktop
+1150.77,POS Purchase,Success,TRUE,Desktop
+480.09,POS Purchase,Success,TRUE,Mobile
+820.56,POS Purchase,Failed,TRUE,Mobile
+1436.82,Cheque Deposit,Success,TRUE,Desktop
+446.48,Bill Payment,Failed,TRUE,Desktop
+823.27,Online Transfer,Success,TRUE,Mobile
+130.81,Online Transfer,Success,FALSE,Desktop
+1476.97,Bill Payment,Success,TRUE,Mobile
+1006.25,POS Purchase,Failed,TRUE,Mobile
+1054.81,Bill Payment,Failed,TRUE,Desktop
+968.25,Online Transfer,Failed,FALSE,Mobile
+986.71,POS Purchase,Failed,FALSE,Mobile
+958.06,Cheque Deposit,Failed,TRUE,Desktop
+1449.24,ATM Withdrawal,Failed,TRUE,Mobile
+1075.67,POS Purchase,Success,FALSE,Desktop
+1254.42,POS Purchase,Failed,FALSE,Mobile
+464.88,Cheque Deposit,Failed,TRUE,Mobile
+60.88,Bill Payment,Failed,FALSE,Desktop
+1212.85,POS Purchase,Failed,TRUE,Desktop
+859.59,Cheque Deposit,Success,FALSE,Mobile
+947.46,ATM Withdrawal,Failed,TRUE,Desktop
+945.11,POS Purchase,Failed,FALSE,Mobile
+177.33,Online Transfer,Failed,TRUE,Mobile
+1479.61,Bill Payment,Success,FALSE,Desktop
+620.69,POS Purchase,Success,TRUE,Mobile
+1165.93,POS Purchase,Failed,TRUE,Mobile
+92.47,Bill Payment,Failed,FALSE,Mobile
+321.27,ATM Withdrawal,Failed,TRUE,Mobile
+797.15,Cheque Deposit,Success,TRUE,Mobile
+821.91,ATM Withdrawal,Failed,TRUE,Mobile
+504.87,POS Purchase,Failed,TRUE,Mobile
+501.32,ATM Withdrawal,Failed,TRUE,Desktop
+290.98,Cheque Deposit,Success,FALSE,Mobile
+1287.51,Bill Payment,Success,TRUE,Desktop
+995.32,Cheque Deposit,Success,TRUE,Mobile
+1249.96,POS Purchase,Failed,FALSE,Mobile
+599.34,Bill Payment,Success,FALSE,Mobile
+1271.78,Bill Payment,Success,TRUE,Desktop
+399.64,Online Transfer,Failed,FALSE,Desktop
+1242.06,ATM Withdrawal,Success,TRUE,Mobile
+1116.07,Online Transfer,Success,FALSE,Mobile
+363.94,Bill Payment,Failed,TRUE,Desktop
+216.24,ATM Withdrawal,Failed,TRUE,Mobile
+779.86,POS Purchase,Success,TRUE,Desktop
+1307.83,Bill Payment,Success,FALSE,Mobile
+706.74,Cheque Deposit,Success,FALSE,Desktop
+1253.28,ATM Withdrawal,Failed,TRUE,Desktop
+298.62,ATM Withdrawal,Success,TRUE,Mobile
+1428.9,POS Purchase,Success,TRUE,Mobile
+1184.1,ATM Withdrawal,Failed,FALSE,Mobile
+742.52,Cheque Deposit,Failed,FALSE,Mobile
+1208.12,Cheque Deposit,Failed,TRUE,Desktop
+1095.73,POS Purchase,Success,TRUE,Mobile
+1004.97,ATM Withdrawal,Failed,TRUE,Mobile
+1000.77,POS Purchase,Failed,FALSE,Mobile
+416.36,Bill Payment,Failed,TRUE,Desktop
+712.32,Cheque Deposit,Success,FALSE,Desktop
+752.37,ATM Withdrawal,Failed,TRUE,Desktop
+1395.27,Bill Payment,Success,FALSE,Mobile
+1174.75,Cheque Deposit,Failed,FALSE,Desktop
+1242.46,ATM Withdrawal,Failed,FALSE,Desktop
+872.63,Online Transfer,Success,FALSE,Mobile
+540.64,ATM Withdrawal,Success,FALSE,Mobile
+1146.73,POS Purchase,Failed,FALSE,Desktop
+1201.56,ATM Withdrawal,Success,TRUE,Mobile
+1065.72,Bill Payment,Success,FALSE,Mobile
+462.23,POS Purchase,Failed,FALSE,Mobile
+765.79,Cheque Deposit,Success,TRUE,Desktop
+462.35,Cheque Deposit,Failed,TRUE,Mobile
+1457.37,Cheque Deposit,Success,TRUE,Mobile
+411.11,Bill Payment,Success,TRUE,Mobile
+239.31,Bill Payment,Failed,FALSE,Mobile
+1326.86,Bill Payment,Success,FALSE,Mobile
+548.03,ATM Withdrawal,Success,FALSE,Mobile
+1012.88,Bill Payment,Success,FALSE,Mobile
+664.85,Online Transfer,Success,TRUE,Desktop
+1331.75,ATM Withdrawal,Success,FALSE,Mobile
+297.46,Bill Payment,Success,FALSE,Desktop
+1005.65,ATM Withdrawal,Success,FALSE,Mobile
+426.24,ATM Withdrawal,Failed,FALSE,Desktop
+486.73,POS Purchase,Failed,FALSE,Mobile
+995.33,Cheque Deposit,Failed,TRUE,Mobile
+940.8,Cheque Deposit,Success,TRUE,Desktop
+536.64,Bill Payment,Success,FALSE,Desktop
+1225.45,Online Transfer,Failed,FALSE,Mobile
+1075.79,ATM Withdrawal,Success,FALSE,Desktop
+425.58,POS Purchase,Failed,FALSE,Desktop
+301.68,ATM Withdrawal,Failed,TRUE,Desktop
+189.27,Online Transfer,Success,TRUE,Desktop
+199.09,Cheque Deposit,Failed,FALSE,Mobile
+1473.03,Bill Payment,Success,TRUE,Mobile
+1219.38,Online Transfer,Failed,TRUE,Mobile
+1151.27,Online Transfer,Failed,TRUE,Desktop
+702.72,POS Purchase,Failed,TRUE,Mobile
+1425.1,Bill Payment,Failed,FALSE,Mobile
+677.83,Cheque Deposit,Success,FALSE,Desktop
+1494.01,Online Transfer,Success,FALSE,Mobile
+734.06,ATM Withdrawal,Success,TRUE,Mobile
+638.32,ATM Withdrawal,Failed,FALSE,Mobile
+436.78,POS Purchase,Failed,TRUE,Mobile
+728.37,Bill Payment,Failed,FALSE,Mobile
+521.21,ATM Withdrawal,Failed,FALSE,Mobile
+354.71,ATM Withdrawal,Failed,TRUE,Mobile
+1354.86,Online Transfer,Success,TRUE,Desktop
+1152.37,Online Transfer,Success,FALSE,Mobile
+960.36,Online Transfer,Success,TRUE,Desktop
+749.78,ATM Withdrawal,Failed,TRUE,Desktop
+860.27,POS Purchase,Success,FALSE,Mobile
+678.84,Cheque Deposit,Success,FALSE,Desktop
+1158.51,Bill Payment,Success,FALSE,Mobile
+1081.36,POS Purchase,Success,TRUE,Desktop
+188.7,Cheque Deposit,Success,FALSE,Mobile
+325.32,Bill Payment,Failed,FALSE,Desktop
+778.32,Online Transfer,Success,FALSE,Desktop
+1334.29,ATM Withdrawal,Failed,TRUE,Mobile
+1375.3,POS Purchase,Failed,FALSE,Mobile
+187.41,Bill Payment,Success,TRUE,Desktop
+770.19,Online Transfer,Failed,TRUE,Desktop
+1147.8,POS Purchase,Failed,FALSE,Mobile
+689.86,Online Transfer,Failed,TRUE,Mobile
+539.4,Cheque Deposit,Success,TRUE,Mobile
+198.18,Online Transfer,Success,FALSE,Desktop
+318.92,Online Transfer,Failed,FALSE,Mobile
+978.96,POS Purchase,Failed,FALSE,Desktop
+655.98,Online Transfer,Success,FALSE,Mobile
+744.4,POS Purchase,Failed,TRUE,Mobile
+916.9,ATM Withdrawal,Failed,TRUE,Mobile
+1209.34,Bill Payment,Success,TRUE,Mobile
+1084.97,POS Purchase,Failed,TRUE,Desktop
+1083.95,Bill Payment,Success,TRUE,Desktop
+272.9,Online Transfer,Success,FALSE,Desktop
+579.04,Bill Payment,Failed,FALSE,Desktop
+481.35,POS Purchase,Failed,TRUE,Mobile
+601.6,Cheque Deposit,Failed,TRUE,Desktop
+406.17,POS Purchase,Failed,FALSE,Desktop
+992.79,POS Purchase,Failed,FALSE,Desktop
+1100.21,Cheque Deposit,Success,TRUE,Desktop
+1131.07,Cheque Deposit,Failed,FALSE,Mobile
+1326.1,POS Purchase,Failed,FALSE,Desktop
+675.48,Cheque Deposit,Success,TRUE,Mobile
+178.14,POS Purchase,Success,TRUE,Desktop
+822.69,POS Purchase,Success,TRUE,Mobile
+592.99,Online Transfer,Failed,TRUE,Mobile
+190.95,POS Purchase,Failed,FALSE,Mobile
+1107.52,ATM Withdrawal,Success,TRUE,Mobile
+384.19,Online Transfer,Success,FALSE,Mobile
+591.01,POS Purchase,Success,TRUE,Desktop
+265.23,ATM Withdrawal,Success,TRUE,Desktop
+256.9,Cheque Deposit,Failed,FALSE,Mobile
+1114.66,Cheque Deposit,Success,FALSE,Mobile
+525.89,POS Purchase,Success,FALSE,Mobile
+247.19,POS Purchase,Failed,FALSE,Desktop
+307.44,POS Purchase,Success,FALSE,Desktop
+917.5,POS Purchase,Failed,FALSE,Desktop
+149.97,Online Transfer,Failed,FALSE,Desktop
+772.24,Cheque Deposit,Failed,FALSE,Desktop
+1191.12,POS Purchase,Success,FALSE,Mobile
+399.24,Online Transfer,Success,FALSE,Mobile
+559.81,Bill Payment,Failed,TRUE,Desktop
+402.64,Bill Payment,Failed,FALSE,Mobile
+1215.46,Cheque Deposit,Success,TRUE,Mobile
+164.94,Cheque Deposit,Success,TRUE,Desktop
+777.59,ATM Withdrawal,Failed,FALSE,Mobile
+802.61,POS Purchase,Failed,TRUE,Desktop
+369.05,Cheque Deposit,Failed,FALSE,Desktop
+635.34,Cheque Deposit,Success,TRUE,Mobile
+646.29,Bill Payment,Success,FALSE,Mobile
+181.28,Cheque Deposit,Success,TRUE,Desktop
+381.94,POS Purchase,Failed,FALSE,Desktop
+656.49,Cheque Deposit,Failed,TRUE,Desktop
+693.73,Bill Payment,Success,FALSE,Desktop
+872.85,ATM Withdrawal,Failed,FALSE,Desktop
+1480.5,POS Purchase,Success,TRUE,Desktop
+1143.38,Online Transfer,Success,FALSE,Desktop
+507.32,Cheque Deposit,Failed,TRUE,Mobile
+514.1,Online Transfer,Failed,TRUE,Mobile
+333.81,POS Purchase,Failed,TRUE,Mobile
+1123.09,POS Purchase,Success,TRUE,Mobile
+274.03,Online Transfer,Success,TRUE,Desktop
+319.5,Bill Payment,Success,TRUE,Mobile
+59.57,Bill Payment,Failed,FALSE,Mobile
+1091.53,Online Transfer,Success,TRUE,Mobile
+1485.37,ATM Withdrawal,Failed,FALSE,Mobile
+179.93,ATM Withdrawal,Success,TRUE,Mobile
+558.64,ATM Withdrawal,Failed,FALSE,Desktop
+919.35,POS Purchase,Failed,FALSE,Mobile
+1285.8,Bill Payment,Failed,TRUE,Desktop
+1098.28,POS Purchase,Success,TRUE,Desktop
+236.29,Bill Payment,Success,FALSE,Desktop
+378.9,ATM Withdrawal,Success,FALSE,Mobile
+1340.76,POS Purchase,Success,FALSE,Mobile
+483.36,Bill Payment,Failed,TRUE,Mobile
+199.81,Online Transfer,Success,FALSE,Desktop
+1341.86,POS Purchase,Success,TRUE,Mobile
+495.36,Cheque Deposit,Failed,FALSE,Mobile
