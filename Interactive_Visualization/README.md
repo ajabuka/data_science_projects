@@ -1,11 +1,10 @@
 # Creating Interactive Charts in JavaScript Using d3 library.
 
-
-<!-- ![Contributors](https://img.shields.io/github/contributors/larymak/Python-project-Scripts?style=plastic)
-![Forks](https://img.shields.io/github/forks/larymak/Python-project-Scripts)
-![Stars](https://img.shields.io/github/stars/larymak/Python-project-Scripts)
-![Licence](https://img.shields.io/github/license/larymak/Python-project-Scripts)
-![Issues](https://img.shields.io/github/issues/larymak/Python-project-Scripts) -->
+![Contributors](https://img.shields.io/github/contributors/ajabuka/data_science_projects/tree/main/Interactive_Visualization?style=plastic)
+![Forks](https://img.shields.io/github/forks/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
+![Stars](https://img.shields.io/github/stars/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
+![Licence](https://img.shields.io/github/license/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
+![Issues](https://img.shields.io/github/issues/ajabuka/data_science_projects/tree/main/Interactive_Visualization)
 
 ## This project was designed by in Team.
 
@@ -30,9 +29,9 @@ This project was completed in Javascript, HTML and CSS. d3.js was used to develo
 
 | SR No | Project                                                                                                                                           | Author                                                      |
 |-------|---------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| 1     | [Map]()                                    | [AJAKAYE, JESUBUKADE](https://github.com/ajabuka)        |
-| 2     | [Line Chart]()                             | [ADU-KUMI, NANA YAW]()                                   |
-| 3     | [Racing Bar Chart]()                       | [AMONIEOFORI, ABINYE]()                                  |
-| 4     | [Box Plot]()                               | [JANNIGORLA, HEMANTH]()                                  |
-| 5     | [Drill Down Pie Chart]()                   | [DANTEINAPALLI, SATYA ANIL KUMAR]()                      |
+| 1     | [Map](https://github.com/ajabuka/data_science_projects/tree/main/Interactive_Visualization/Map)                                    | [AJAKAYE, JESUBUKADE](https://github.com/ajabuka)        |
+| 2     | [Line Chart](https://github.com/ajabuka/data_science_projects/tree/main/Interactive_Visualization/LineChart)                              | [ADU-KUMI, NANA YAW]()                                   |
+| 3     | [Racing Bar Chart](https://github.com/ajabuka/data_science_projects/tree/main/Interactive_Visualization/BarChart)                               | [AMONIEOFORI, ABINYE]()                                  |
+| 4     | [Box Plot](https://github.com/ajabuka/data_science_projects/tree/main/Interactive_Visualization/BoxPlot)                                | [JANNIGORLA, HEMANTH]()                                  |
+| 5     | [Drill Down Pie Chart](https://github.com/ajabuka/data_science_projects/tree/main/Interactive_Visualization/PieChart)                               | [DANTEINAPALLI, SATYA ANIL KUMAR]()                      |
 
