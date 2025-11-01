@@ -1,0 +1,689 @@
+####### Setting Working Directory #######
+# Change the working directory
+setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+
+# check current working directory
+getwd()
+
+# list the files in the working directory
+list.files(getwd())
+
+####### Importing Required Libraries and Reading Dataset #######
+# Loading library
+library(tidyverse) # for data processing
+library(gridExtra) # merging visuals
+library(ROSE) # Data Balancing
+library(caret) # Model Building (createDataPartition)
+library(pROC) # ROC and AUC
+library(MLmetrics) # F1 score
+
+# Read the csv file
+US_data <- read.csv("US_Accidents_March23_sampled_500k.csv", na.strings=c("","NA"))
+
+####### Data Preparation and Data Cleaning #######
+# Get the column names of data
+colnames(US_data)
+
+# Checking Data attributes
+str(US_data)
+
+# Checking for missing values
+sum(is.na(US_data))
+
+# Checking for proportion of missing data
+US_pctmiss <- colSums(is.na(US_data))/nrow(US_data)
+round(US_pctmiss, 2)
+
+# Dropping All Rows with Missing Data
+US_newdata <- na.omit(US_data)
+
+# Check Unique values in Targets
+unique(US_newdata$Severity)
+table(US_newdata$Roundabout)
+table(US_newdata$Turning_Loop)
+
+# Re-coding Target variable
+US_newdata <- mutate(US_newdata, Severity = ifelse(Severity < 3, 0, 1))
+
+table(US_newdata$Severity)
+
+# Add a plot of target here
+target <- ggplot(US_newdata, aes(x = factor(Severity),
+                                 fill = factor(Severity))) +
+  geom_bar() +
+  labs(title = "Bar Plot of Target Variable",
+       x = "Severity",
+       y = "Count",
+       fill = "Severity") +
+  scale_x_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+target
+
+## Dealing with imbalance
+# Undersampling
+set.seed(199)
+US_newdata_Sample = ovun.sample(Severity ~ .,
+                              data = US_newdata,
+                              method = "under",
+                              N = 25000)$data
+
+# Checking for missing values
+anyNA(US_newdata_Sample)
+table(US_newdata_Sample$Roundabout)
+table(US_newdata_Sample$Turning_Loop)
+
+# Add a plot of new target here
+# Add a plot of target here
+balances_target <- ggplot(US_newdata_Sample, aes(x = factor(Severity),
+                                                 fill = factor(Severity))) +
+  geom_bar() +
+  labs(title = "Bar Plot of Target Variable",
+       x = "Severity",
+       y = "Count",
+       fill = "Severity") +
+  scale_x_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+# Plot Grid of Target Variable
+grid.arrange(
+  target,
+  balances_target,
+  ncol = 2
+)
+
+
+# Converting Date Columns to date data
+US_newdata_Sample$Start_Time <- parse_date_time(US_newdata_Sample$Start_Time, orders = "ymd_HMS")
+
+US_newdata_Sample$End_Time <- parse_date_time(US_newdata_Sample$End_Time, orders = "ymd_HMS")
+
+US_newdata_Sample$Weather_Timestamp <- parse_date_time(US_newdata_Sample$Weather_Timestamp, orders = "ymd_HMS")
+
+# Creating New Calculated Columns
+US_newdata_Sample$Time <- (US_newdata_Sample$End_Time - US_newdata_Sample$Start_Time)
+
+# Converting day difference to numeric
+US_newdata_Sample$Time <- as.numeric(US_newdata_Sample$Time)
+
+
+# Drop Columns not needed based on factors such as in already calculated columns
+US_newdata_Sample <- select(US_newdata_Sample, -ID, -Source, -Start_Time,
+                            -End_Time, -Description, -Start_Lat, -Start_Lng,
+                            -End_Lat, -End_Lng, -Country, -Turning_Loop,
+                            -Roundabout)
+
+
+# Creating list of Columns
+numeric_columns = names((which(sapply(select(US_newdata_Sample, -"Severity"),
+                                      is.numeric))))
+numeric_columns
+
+categorical_columns <- names((which(sapply(US_newdata_Sample, is.character))))
+
+categorical_columns
+
+
+####### Exploratory Data Analysis #######
+# create box plot for numeric variables
+plots <- lapply(numeric_columns, function(colname) {
+  ggplot(US_newdata_Sample, aes(y = .data[[colname]])) +
+    geom_boxplot(fill = "lightgreen") +
+    theme_minimal() +
+    labs(title = colname, y = NULL) +
+    coord_flip()  # ← This flips the plot horizontally
+})
+
+# Arrange in 3x3 grid
+do.call(grid.arrange, c(plots, ncol = 3))
+
+
+# create side by side bar chart for categorical variables
+Amenity <- ggplot(US_newdata_Sample, aes(x = Amenity,
+                                         fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Amenity",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Bump <- ggplot(US_newdata_Sample, aes(x = Bump,
+                                      fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Bump",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Crossing <- ggplot(US_newdata_Sample, aes(x = Crossing,
+                                          fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Crossing",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Give_Way <- ggplot(US_newdata_Sample, aes(x = Give_Way,
+                                          fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Give_Way",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Junction <- ggplot(US_newdata_Sample, aes(x = Junction,
+                                          fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Junction",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+
+No_Exit <- ggplot(US_newdata_Sample, aes(x = No_Exit,
+                                         fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "No_Exit",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Railway <- ggplot(US_newdata_Sample, aes(x = Railway,
+                                         fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Railway",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Station <- ggplot(US_newdata_Sample, aes(x = Station,
+                                         fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Station",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Stop <- ggplot(US_newdata_Sample, aes(x = Stop,
+                                      fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Stop",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Traffic_Calming <- ggplot(US_newdata_Sample, aes(x = Traffic_Calming,
+                                                 fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Traffic_Calming",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+Traffic_Signal <- ggplot(US_newdata_Sample, aes(x = Traffic_Signal,
+                                                fill = factor(Severity))) +
+  geom_bar(position = "fill") +
+  labs(x = "Traffic_Signal",
+       y = "Count",
+       fill = "Severity") +
+  scale_fill_discrete(labels  = c("0" = "LOW", "1" = "HIGH")) +
+  theme_minimal()
+
+# Arrange in 3x3 grid
+grid.arrange(
+  Amenity,
+  Bump,
+  Crossing,
+  Give_Way,
+  Junction,
+  No_Exit,
+  Railway,
+  Station,
+  Stop,
+  Traffic_Calming,
+  Traffic_Signal,
+  ncol = 3
+)
+
+####### Data Transformation #######
+# Encoding categorical Variables
+US_newdata_Sample[categorical_columns] <- lapply(
+  US_newdata_Sample[categorical_columns], 
+  function(x) as.integer(as.factor(x)) - 1
+)
+
+head(US_newdata_Sample)
+
+str(US_newdata_Sample)
+
+# Standardizing Feature Columns
+US_newdata_Sample <- US_newdata_Sample %>% mutate(Weather_Timestamp =
+                                                    scale(Weather_Timestamp))
+
+# Scale Categorical Columns
+US_newdata_Sample[categorical_columns] <-
+  lapply(US_newdata_Sample[categorical_columns], scale)
+
+
+# Scale Numeric Columns
+normalise <- function(x) { (x -min(x))/(max(x)-min(x)) }
+
+US_newdata_Sample[numeric_columns] <- as.data.frame(
+  lapply(US_newdata_Sample[,numeric_columns], normalise))
+
+head(US_newdata_Sample)
+
+
+####### Correlation and MultiCollinearity ######
+corrmatrix <- cor(US_newdata_Sample)
+# Generate new variable names
+var_codes <- paste0("V", seq_along(US_newdata_Sample))
+names(var_codes) <- US_newdata_Sample  # This will be used for the key
+
+# Rename rows and columns of the correlation matrix
+colnames(corrmatrix) <- var_codes
+rownames(corrmatrix) <- var_codes
+
+corrplot::corrplot(corrmatrix, method = "color", type = "upper", tl.srt = 45)
+
+# Plot correlated feature
+ggplot(US_newdata_Sample, aes(x = Wind_Chill.F., y = Temperature.F.)) +
+  geom_point(color = "steelblue", alpha = 0.6, size = 2.5) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkred") +
+  labs(title = "Scatter Plot with Trend Line",
+       x = "Wind_Chill.F",
+       y = "Temperature.F") +
+  theme_minimal()
+
+# correlation for all variables
+correlations = round(cor(US_newdata_Sample), digits = 2)
+
+# Get variable greater than 0.8
+weights <- which(abs(correlations) > 0.8 & row(correlations)<col(correlations), arr.ind=TRUE)
+
+## reconstruct names from positions
+high_cor <- matrix(colnames(correlations)[weights], ncol=2)
+
+high_cor
+
+# Remove Based on correlation
+US_newdata_Sample <- select(US_newdata_Sample, -Wind_Chill.F.,
+                            -Nautical_Twilight, -Astronomical_Twilight,
+                            -Civil_Twilight)
+
+# Checking for MultiCollinearity using VIF
+set.seed(123)
+model_data_glm <- glm(Severity ~ ., data = US_newdata_Sample, family = binomial)
+model_data_vif <- car::vif(model_data_glm)
+model_data_vif
+
+
+
+####### Base Model Building and Testing #######
+# Checking for missing values
+anyNA(US_newdata_Sample)
+
+table(US_newdata_Sample$Severity)
+
+# factor target
+US_newdata_Sample$Severity <- as.factor(US_newdata_Sample$Severity)
+
+# Splitting Data into Training and Testing Set
+set.seed(42)
+train_index <- createDataPartition(US_newdata_Sample$Severity, p = 0.8, list = FALSE)
+train_data <- US_newdata_Sample[train_index, ]
+test_data <- US_newdata_Sample[-train_index, ]
+
+##### KNN #####
+set.seed(42)
+start_time <- Sys.time() # Record start time for model
+model_knn <- train(Severity ~ ., data = train_data, method = "knn")
+stop_time <- Sys.time() # Record model ending time
+training_time <- stop_time - start_time # Calculate training time
+
+cat("Training Time: ", training_time, "\n")
+print(model_knn$bestTune)
+model_knn
+
+# Save Model
+saveRDS(model_knn, file = "caret_knn_base.rds")
+
+# Load KNN base model
+model_knn <- readRDS("caret_knn_base.rds")
+model_knn
+
+# Base KNN Test Prediction
+knn_test_predict <- predict(model_knn, test_data)
+confusionMatrix(knn_test_predict, test_data$Severity)
+
+##### Naive Bayes #####
+set.seed(42)
+start_time <- Sys.time() # Record start time for model
+model_nb <- train(Severity ~ ., data = train_data, method = "nb")
+stop_time <- Sys.time() # Record model ending time
+training_time <- stop_time - start_time # Calculate training time
+
+cat("Training Time: ", training_time, "\n")
+print(model_nb$bestTune)
+model_nb
+
+# Save Model
+saveRDS(model_nb, file = "caret_nb_base.rds")
+
+# Load NB base model
+model_nb <- readRDS("caret_nb_base.rds")
+model_nb
+
+# Base Naive Bayes Test Prediction
+nb_test_predict <- predict(model_nb, test_data)
+confusionMatrix(nb_test_predict, test_data$Severity)
+
+
+##### Logistic Regression #####
+set.seed(42)
+start_time <- Sys.time() # Record start time for model
+model_lr <- train(Severity ~ ., data = train_data, method = "glm", family = "binomial")
+stop_time <- Sys.time() # Record model ending time
+training_time <- stop_time - start_time # Calculate training time
+
+cat("Training Time: ", training_time, "\n")
+print(model_lr$bestTune)
+model_lr
+
+# Save Model
+saveRDS(model_lr, file = "caret_lr_base.rds")
+
+# Load LR base model
+model_lr <- readRDS("caret_lr_base.rds")
+model_lr
+
+# Base Logistic Regression Test Prediction
+lr_test_predict <- predict(model_lr, test_data)
+confusionMatrix(lr_test_predict, test_data$Severity)
+
+
+##### Random Forest #####
+set.seed(42)
+start_time <- Sys.time() # Record start time for model
+model_rf <- train(Severity ~ ., data = train_data, method = "rf")
+stop_time <- Sys.time() # Record model ending time
+training_time <- stop_time - start_time # Calculate training time
+
+cat("Training Time: ", training_time, "\n")
+print(model_rf$bestTune)
+model_rf
+
+# Save Model
+saveRDS(model_rf, file = "caret_rf_base.rds")
+
+# Load RF base model
+model_rf <- readRDS("caret_rf_base.rds")
+model_rf
+
+# Base Random Forest Test Prediction
+rf_test_predict <- predict(model_rf, test_data)
+confusionMatrix(rf_test_predict, test_data$Severity)
+
+
+##### Feature Importance #####
+# Extract feature importance from RF Model
+importance_rf <- varImp(model_rf)
+importance_rf
+
+plot(varImp(model_rf))
+
+# Convert importance object to dataframe
+importance_df <- as.data.frame(importance_rf$importance)
+importance_df
+
+# Sort features by importance (descending order)
+sorted_features <- importance_df[order(-rowMeans(importance_df)), , drop = FALSE]
+
+# Extract the top 20 features
+top_features <- rownames(sorted_features)[1:20]
+top_features
+
+# Extract New Train and Test Data based of Selected Features
+selected_train_data <- train_data %>% select(all_of(top_features), Severity)
+selected_test_data <- test_data %>% select(all_of(top_features), Severity)
+
+# Check Any Missing Data in Training Data
+anyNA(selected_train_data)
+
+# Check Any Missing Data in Testing Data
+anyNA(selected_test_data)
+
+
+####### Hyperparameter Tuning of Model #######
+# Optimize System
+# Detect number of available cores
+num_cores <- detectCores() - 2  # Leave 2 core free for system tasks
+
+# Register parallel backend
+cl <- makeCluster(num_cores)
+registerDoParallel(cl)
+
+# Initialize Train Control
+trctrl <- trainControl(method = "repeatedcv",
+                       summaryFunction = defaultSummary, classProbs = FALSE,
+                       number = 5, repeats = 5, allowParallel = TRUE)
+
+
+##### Tune KNN #####
+set.seed(321)
+knn_grid <- expand.grid(k = seq(1, 150, by = 2))
+
+model_knn_tune <- train(Severity ~ ., data = selected_train_data,
+                        method = "knn", tuneGrid = knn_grid,
+                        trControl = trctrl)
+
+# Save Model
+saveRDS(model_knn_tune, file = "caret_knn_tune.rds")
+
+# Load KNN Tuned model
+model_knn_tune <- readRDS("caret_knn_tune.rds")
+print(model_knn_tune$bestTune)
+model_knn_tune
+
+# Tuned KNN Test Prediction
+knn_tune_test_predict <- predict(model_knn_tune, selected_test_data)
+confusionMatrix(knn_tune_test_predict, selected_test_data$Severity)
+
+
+##### Tune Naive Bayes #####
+set.seed(321)
+nb_grid <- expand.grid(fL = c(0, 0.5, 1),
+                       usekernel = c(TRUE, FALSE),
+                       adjust = c(0.5, 1, 2))
+
+model_nb_tune <- train(Severity ~ ., data = selected_train_data,
+                       method = "nb", tuneGrid = nb_grid, trControl = trctrl)
+
+# Save Model
+saveRDS(model_nb_tune, file = "caret_nb_tune.rds")
+
+# Load NB Tuned model
+model_nb_tune <- readRDS("caret_nb_tune.rds")
+print(model_nb_tune$bestTune)
+model_nb_tune
+
+# Tuned Naive Bayes Test Prediction
+nb_tune_test_predict <- predict(model_nb_tune, selected_test_data)
+confusionMatrix(nb_tune_test_predict, selected_test_data$Severity)
+
+
+##### Tune Logistic Regression #####
+set.seed(321)
+model_lr_tune <- train(Severity ~ ., data = selected_train_data,
+                       method = "glm", family = "binomial",
+                       trControl = trctrl)
+
+# Save Model
+saveRDS(model_lr_tune, file = "caret_lr_tune.rds")
+
+# Load LR Tuned model
+model_lr_tune <- readRDS("caret_lr_tune.rds")
+
+# Predict with probability to find best threshold
+train_probabilities <- predict(model_lr_tune, selected_train_data, type = "prob")
+
+# set a dataframe to save results
+lr_results <- data.frame()
+
+# Set a probability cutoff
+cutoffs <- c(0.3, 0.4, 0.5, 0.6, 0.7)
+
+for (cutoff in cutoffs){
+  train_predicted_class <- ifelse(train_probabilities[,2] > cutoff, 1, 0)
+  
+  # Convert to factor with correct levels
+  train_predicted_class <- factor(train_predicted_class,
+                                  levels = levels(selected_train_data$Severity))
+  
+  # Evaluate accuracy on training data
+  cm <- confusionMatrix(train_predicted_class, selected_train_data$Severity)
+  
+  Accuracy <- cm$overall["Accuracy"]
+  Kappa <- cm$overall["Kappa"]
+  df_cm <- data.frame(cutoff, Accuracy, Kappa)
+  lr_results <- rbind(lr_results, df_cm)
+}
+
+lr_results
+
+# Tuned Logistic Regression Test Prediction
+
+# Predict with probability to find best threshold
+test_probabilities <- predict(model_lr_tune, selected_test_data, type = "prob")
+
+# Set best probability cutoff
+cutoff <- 0.6
+
+test_predicted_class <- ifelse(test_probabilities[,2] > cutoff, 1, 0)
+
+# Convert to factor with correct levels
+test_predicted_class <- factor(test_predicted_class,
+                               levels = levels(selected_test_data$Severity))
+
+# Evaluate accuracy on training data
+confusionMatrix(test_predicted_class, selected_test_data$Severity)
+
+
+##### Tune Random Forest #####
+set.seed(321)
+
+# Define tuning grid for Random Forest
+rf_grid <- expand.grid(
+  mtry = seq(1, ncol(selected_train_data) - 1, by = 1))
+
+# Create a list to store results
+rf_results <- list()
+
+# Tune `ntree` and `nodesize` manually
+for (nt in seq(500, 2000, by = 500)) {  # Vary ntree
+  for (ns in seq(1, 10)) {     # Vary nodesize
+    
+    model_rf_tune <- train(
+      Severity ~ ., data = selected_train_data, method = "rf",
+      tuneGrid = rf_grid, 
+      trControl = trctrl,
+      ntree = nt,      # Set ntree manually
+      nodesize = ns    # Set nodesize manually
+    )
+    
+    # Store the model with its parameter settings
+    rf_results[[paste("ntree", nt, "nodesize", ns)]] <- model_rf_tune
+  }
+}
+
+
+# Find the best model based on Accuracy
+best_model_rf <- rf_results[[which.max(sapply(rf_results, function(x) max(x$results$Accuracy)))]]
+
+# Save Model
+saveRDS(best_model_rf, file = "caret_rf_tune.rds")
+
+# Load RF base model
+model_rf_tune <- readRDS("caret_rf_tune.rds")
+
+# Print the best hyperparameters
+print(model_rf_tune$finalModel)
+model_rf_tune
+
+# Tuned Random Forest Test Prediction
+rf_tune_test_predict <- predict(model_rf_tune, selected_test_data)
+best_model_matrix <- confusionMatrix(rf_tune_test_predict, selected_test_data$Severity)
+best_model_matrix
+
+# Plotting the confusion Matrix
+model_conf_mat_data = as.data.frame(best_model_matrix$table)
+model_conf_matrix_plot <- model_conf_mat_data %>%
+  ggplot(aes(x = Prediction, y = Reference, fill = Freq)) +
+  geom_tile() +
+  geom_text(aes(label = Freq))
+model_conf_matrix_plot
+
+# Ending Parallel Processors
+stopCluster(cl)
+registerDoSEQ()  # Reset to sequential processing
+
+
+
+####### Model Evaluation #######
+##### AUC/ROC #####
+# Plot ROC Curve
+test_labels_binary <- as.numeric(selected_test_data$Severity) - 1
+knn_model_binary <- as.numeric(knn_tune_test_predict) - 1
+nb_model_binary <- as.numeric(nb_tune_test_predict) - 1
+lr_model_binary <- as.numeric(test_predicted_class) - 1
+rf_model_binary <- as.numeric(rf_tune_test_predict) - 1
+
+# Compute the ROC Curve and AUC
+roc_knn <- roc(test_labels_binary, knn_model_binary)
+roc_nb <- roc(test_labels_binary, nb_model_binary)
+roc_lr <- roc(test_labels_binary, lr_model_binary)
+roc_rf <- roc(test_labels_binary, rf_model_binary)
+
+# Plot all ROC curves together
+plot(roc_knn, col = "blue", lwd = 2, main = "ROC Curve Comparison")
+plot(roc_lr, col = "green", lwd = 2, add = TRUE)
+plot(roc_nb, col = "purple", lwd = 2, add = TRUE)
+plot(roc_rf, col = "orange", lwd = 2, add = TRUE)
+
+# Add legend
+legend("bottomright", legend = c(
+  paste("KNN (AUC =", round(auc(roc_knn), 2), ")"),
+  paste("LogReg (AUC =", round(auc(roc_lr), 2), ")"),
+  paste("Naive Bayes (AUC =", round(auc(roc_nb), 2), ")"),
+  paste("Random Forest (AUC =", round(auc(roc_rf), 2), ")")
+),
+col = c("blue", "green", "purple", "orange"),
+lwd = 2
+)
+
+
+##### F1 Scores #####
+# Get F1 Scores of models
+F1_knn <- F1_Score(test_labels_binary, knn_model_binary, positive = 0)
+F1_nb <- F1_Score(test_labels_binary, nb_model_binary, positive = 0)
+F1_lr <- F1_Score(test_labels_binary, lr_model_binary, positive = 0)
+F1_rf <- F1_Score(test_labels_binary, rf_model_binary, positive = 0)
+
+f1_scores <- data.frame(
+  Model = c("KNN", "Naive Bayes", "Logistic Regression", "Random Forest"),
+  F1 = c(F1_knn, F1_nb, F1_lr, F1_rf)
+)
+
+f1_scores
